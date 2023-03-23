@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+.title{
+  color: mintcream;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1em;
+  height: 40px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  height: 3em;
+  width: 3em;
+  color: rgba(0,0,0,0.7);
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  transition: .6s ease-in-out;
+  text-align: center;
+  font-size: 1em;
+}
+
+#tab {
+  width: 5em;
+}
+
+#CapsLock {
+  width: 6em;
+}
+
+#Shift {
+  width: 8em;
+}
+
+#Enter {
+  width: 6em;
+}
+
+#Backspace {
+  width: 5em;
+}
+
+.pinky { 
+  background-color: crimson;
+  border: 2px solid crimson;
+}
+.pinky.selected {
+  color: crimson;
+}
+
+.ring { 
+  background-color: coral;
+  border: 2px solid coral;
+}
+.ring.selected {
+  color: coral;
+}
+
+.middle { 
+  background-color: darkorange;
+  border: 2px solid darkorange;
+}
+.middle.selected {
+  color: darkorange;
+}
+
+.pointer1st { 
+  background-color: gold;
+  border: 2px solid gold;
+}
+.pointer1st.selected {
+  color: gold;
+}
+
+.pointer2nd { 
+  background-color: khaki;
+  border: 2px solid khaki;
+}
+.pointer2nd.selected {
+  color: khaki;
+}
+
+.fill-out-key {
+  background-color: slategrey;
+  border: 2px solid slategrey;
+}
+
+.selected {
+  background-color: transparent;
+  	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+.hit {
+	-webkit-animation: hit .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: hit .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes hit {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes hit {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
